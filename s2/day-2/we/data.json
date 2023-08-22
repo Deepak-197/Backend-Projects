@@ -1,0 +1,42 @@
+{
+    "student": [
+        {
+            "name": "chunnu",
+            "city": "manali"
+        },
+        {
+            "name": "chunnu",
+            "city": "manali"
+        },
+        {
+            "name": "chunnu",
+            "city": "manali"
+        },
+        {
+            "name": "chunnu",
+            "city": "manali"
+        },
+        {
+            "name": "Deepak",
+            "city": "Bhopal"
+        }
+    ],
+    "teachers": [
+        {
+            "name": "chunnu",
+            "city": "DSA"
+        },
+        {
+            "name": "chunnu",
+            "city": "DSA"
+        },
+        {
+            "name": "chunnu",
+            "city": "DSA"
+        },
+        {
+            "name": "chunnu",
+            "city": "DSA"
+        }
+    ]
+}
