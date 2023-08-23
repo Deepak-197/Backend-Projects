@@ -31,6 +31,28 @@ app.get("/", (req, res) => {
 // })
 
 
+//query                              //something which is req your server -> dynamic response.
+app.get("/wapi", (req, res) => {
+
+    let data = {
+        banglore: "25C",
+        delhi:"40C",
+        pune:"20C",
+    }
+    const {city} = req.query
+    console.log(city)
+    res.send(`The Temperature at ${city} is ${data[city]}.`)
+
+})
+
+// query and Params both are used for Dynamic Responses.
+
+//params 
+
+app.get("/students/:id", (req, res) => {
+    const roll_no = req.params.id
+    res.send(`The details of student with roll no: ${id}`)
+})
 
 
 app.listen(5000, () => {
