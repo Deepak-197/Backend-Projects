@@ -1,0 +1,5 @@
+Method: POST | Route: /addmovie | user-agent: [object Object] | Response Time: 5ms 
+Method: POST | Route: /addmovie | user-agent: [object Object] | Response Time: 5ms 
+Method: POST | Route: /movies/2 | user-agent: [object Object] | Response Time: 2ms 
+Method: GET | Route: /2 | user-agent: [object Object] | Response Time: 2ms 
+Method: GET | Route: / | user-agent: [object Object] | Response Time: 0ms 
