@@ -3,3 +3,7 @@ Method: POST | Route: /addmovie | user-agent: [object Object] | Response Time: 5
 Method: POST | Route: /movies/2 | user-agent: [object Object] | Response Time: 2ms 
 Method: GET | Route: /2 | user-agent: [object Object] | Response Time: 2ms 
 Method: GET | Route: / | user-agent: [object Object] | Response Time: 0ms 
+Method: PATCH | Route: /6?password=5567&role=admin | user-agent: [object Object] | Response Time: 9ms 
+Method: PATCH | Route: /6?password=5567&role=admin | user-agent: [object Object] | Response Time: 6ms 
+Method: PATCH | Route: /6?password=5567&role=admin | user-agent: [object Object] | Response Time: 9ms 
+Method: DELETE | Route: /6?password=5567&role=admin | user-agent: [object Object] | Response Time: 6ms 

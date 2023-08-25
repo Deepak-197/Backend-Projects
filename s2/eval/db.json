@@ -1,1 +1,59 @@
-{"movies":[{"movie_id":1,"name":"Spider","genre":"abcd","director":"no-one"},{"movie_id":2,"name":"Spider-2","genre":"abc4","director":"no-on"},{"movie_id":4,"name":"Spider-4","genre":"male","director":"no4"},{"movie_id":5,"name":"Ashram2","genre":"oyes","director":"deepak"},{"movie_id":5,"name":"Ashram2","genre":"oyes","director":"deepak"},{"movie_id":6,"name":"Ashram2","genre":"oyes","director":"deepak"}],"series":[{"series_id":1,"name":"AAshram","genre":"male","director":"Prashant Dhavan"},{"series_id":2,"name":"Aram","genre":"oyes"},{"series_id":3,"name":"Ashram","genre":"oyes","director":"deepak"},{"series_id":4,"name":"Ashram2","genre":"oyes","director":"deepak"}]}
+{
+    "movies": [
+        {
+            "movie_id": 1,
+            "name": "Spider",
+            "genre": "abcd",
+            "director": "no-one"
+        },
+        {
+            "movie_id": 2,
+            "name": "Spider-2",
+            "genre": "abc4",
+            "director": "no-on"
+        },
+        {
+            "movie_id": 4,
+            "name": "Spider-4",
+            "genre": "male",
+            "director": "no4"
+        },
+        {
+            "movie_id": 5,
+            "name": "Ashram2",
+            "genre": "oyes",
+            "director": "deepak"
+        },
+        {
+            "movie_id": 5,
+            "name": "Ashram2",
+            "genre": "oyes",
+            "director": "deepak"
+        }
+    ],
+    "series": [
+        {
+            "series_id": 1,
+            "name": "AAshram",
+            "genre": "male",
+            "director": "Prashant Dhavan"
+        },
+        {
+            "series_id": 2,
+            "name": "Aram",
+            "genre": "oyes"
+        },
+        {
+            "series_id": 3,
+            "name": "Ashram",
+            "genre": "oyes",
+            "director": "deepak"
+        },
+        {
+            "series_id": 4,
+            "name": "Ashram2",
+            "genre": "oyes",
+            "director": "deepak"
+        }
+    ]
+}

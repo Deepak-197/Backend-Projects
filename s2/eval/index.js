@@ -20,3 +20,6 @@ app.use("/series", seriesRouter)
 app.listen(8080, () => {
     console.log("Server is running on port 8080");
 })
+
+
+// localhost:8080/movies/6?password=5567&role=admin               // this url for patch and delete for movie/series.
