@@ -1,11 +1,16 @@
 const mongoose = require("mongoose")
+require('dotenv').config({ override: true })     // optional mention override
 
 // const main = () => {
 //     const connection = mongoose.connect("mongodb://127.0.0.1:27017/university")
 // }
 // main()
 
-const connection = mongoose.connect("mongodb://127.0.0.1:27017/university")
+
+// mongodb atlas link
+// mongodb+srv://deepak:<password>@deepak.ml6ptpi.mongodb.net/?retryWrites=true&w=majority
+
+const connection = mongoose.connect(process.env.mongoURL)
 
 
 

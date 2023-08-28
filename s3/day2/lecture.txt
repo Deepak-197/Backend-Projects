@@ -1,0 +1,8 @@
+Challanges
+
+1. Don't use complicated username or password while crating the cluster.
+ ===> No Number, No Special Char, No uppercase Char
+
+2. Don't use complicated names for database & collection as well.
+
+3. 

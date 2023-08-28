@@ -1,22 +1,9 @@
-const express = require("express")
-const {connection, UserModel} = require("./db")
-require('dotenv').config({ override: true })               //.env means environment variables
+const express = require('express');
+const {UserModel} = require("../model/Users.model")
 
-const app = express()
-app.use(express.json())
+const userRouter = express.Router();
 
-app.get("/",async (req, res) => {
-    try{
-        const users = await UserModel.find()
-        res.send(users)
-    }catch(err){
-        res.send({"msg":"Cannot get user.", "error":err.message})
-    }
-    res.send("WELCOME")
-
-})
-
-app.get("/users",async (req, res) => {
+userRouter.get("/",async (req, res) => {
     let query = req.query
     try{
         const users = await UserModel.find(query)
@@ -27,7 +14,7 @@ app.get("/users",async (req, res) => {
     
 })
 
-app.post("/register",async (req, res) => {
+userRouter.post("/register",async (req, res) => {
     // console.log(req.body)
      try{
         const user = new UserModel(req.body)
@@ -40,7 +27,7 @@ app.post("/register",async (req, res) => {
      
 })
 
-app.patch("/update/:id",async (req, res) => {
+userRouter.patch("/update/:id",async (req, res) => {
     const ID = req.params.id;
     const payload = req.body;
     
@@ -54,7 +41,7 @@ app.patch("/update/:id",async (req, res) => {
 
 
 
-app.delete("/delete/:id",async (req, res) => {
+userRouter.delete("/delete/:id",async (req, res) => {
     const ID = req.params.id;
     // const payload = req.body;
     // res.send(ID)
@@ -66,14 +53,7 @@ app.delete("/delete/:id",async (req, res) => {
     }
 })
 
-app.listen(process.env.port, async() => {
-    try{
-        await connection
-        console.log("Connected to the DB")
-    }catch(err){
-        console.log("Cannot Connect to the DB")
-        console.log(err)
-    }
-    
-    console.log(`Server is running at port ${process.env.port}`)
-})
+
+module.exports = {
+    userRouter
+}
