@@ -1,0 +1,6 @@
+::1 - - [28/Aug/2023:11:47:07 +0000] "GET / HTTP/1.1" 404 245 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36"
+::1 - - [28/Aug/2023:11:47:44 +0000] "DELETE / HTTP/1.1" 404 142 "-" "PostmanRuntime/7.29.3"
+::1 - - [28/Aug/2023:11:49:24 +0000] "POST /upload HTTP/1.1" 500 1375 "-" "PostmanRuntime/7.29.3"
+::1 - - [28/Aug/2023:11:49:52 +0000] "POST /upload HTTP/1.1" 500 277 "-" "PostmanRuntime/7.29.3"
+::1 - - [28/Aug/2023:11:50:47 +0000] "POST /upload HTTP/1.1" 500 277 "-" "PostmanRuntime/7.29.3"
+::1 - - [28/Aug/2023:11:51:55 +0000] "POST /upload HTTP/1.1" 500 277 "-" "PostmanRuntime/7.29.3"
