@@ -26,7 +26,11 @@ app.post("/register",async (req, res) => {
 
 app.post("/login", async(req, res) => {
     const {email, pass} = req.body;
-    const token = jwt.sign({ course: 'backend' }, 'masai');            // var token = jwt.sign({ foo: 'bar' }, 'shhhhh');  | { foo: 'bar' } this is random payload we can change the name,  
+    // const token = jwt.sign({ course: 'backend' }, 'masai');            // var token = jwt.sign({ foo: 'bar' }, 'shhhhh');  | { foo: 'bar' } this is random payload we can change the name,  
+    const token = jwt.sign({
+        course: 'backend'
+      }, 'masai', { expiresIn: '1h' });
+    
     try{
         const user=await UserModel.find({email, pass})          // {$and: [{email: email} , {password: password}]}  or   // {email: email, password: password}
         if(user.length > 0){
