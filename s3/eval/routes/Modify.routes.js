@@ -9,7 +9,7 @@ modifyRouter.patch("/update/:id", async (req, res)=> {
     let id = req.params.id;
 
     try{
-        await FoodModel.findByIdAndUpdate({"_id":id}, req.body);
+        await FoodModel.findByIdAndUpdate({_id:id}, req.body);
         res.send(`Updated the dish whose id is ${id}`)
     }catch(err){
         console.log(err);
@@ -20,7 +20,7 @@ modifyRouter.patch("/update/:id", async (req, res)=> {
 modifyRouter.delete("/delete/:id", async (req, res) => {
     let id = req.params.id;
     try{
-        await FoodModel.findByIdAndDelete({"_id":id});
+        await FoodModel.findByIdAndDelete({_id:id});
         res.send(`Deleted the dish whose id is ${id}`)
     }catch(err){
         console.log(err)
